@@ -1,9 +1,14 @@
+//Importando react
 import React from 'react';
+//Importando prop-types
 import PropTypes from 'prop-types';
+//Importando estilos
 import '../assets/styles/components/CarouselItem.scss';
+//Importando imagenes
 import playIcon from '../assets/static/play-icon.png';
 import plusIcon from '../assets/static/plus-icon.png';
 
+//Creando componente
 const CarouselItem = ({ cover, title, year, contentRating, duration }) => (
   <div className="carousel-item">
   <img className="carousel-item__img" src={cover} alt={title}  />
@@ -20,6 +25,7 @@ const CarouselItem = ({ cover, title, year, contentRating, duration }) => (
 </div>
 );
 
+//Documentando propiedades del componente
 CarouselItem.propTypes = {
   cover: PropTypes.string,
   title: PropTypes.string,
@@ -28,4 +34,5 @@ CarouselItem.propTypes = {
   duration: PropTypes.number,
 }
 
+//Exportando componente
 export default CarouselItem;

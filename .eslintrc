@@ -1,3 +1,4 @@
+/*Eslint nos sirve para detectar errores y types*/
 {
   "env": {
     "browser": true,
