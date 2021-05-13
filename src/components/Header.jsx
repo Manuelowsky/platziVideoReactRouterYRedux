@@ -1,5 +1,7 @@
 //Importando react
 import React from 'react';
+//Importando Link
+import {Link} from 'react-router-dom';
 //Importando estilos
 import '../assets/styles/components/Header.scss';
 //Importando imagenes
@@ -9,7 +11,11 @@ import userIcon from '../assets/static/user-icon.png';
 //Creando componente
 const Header = () => (
   <header className="header">
-    <img className="header__img" src={logo} alt="Platzi Video" />
+
+    <Link to='/'>
+      <img className="header__img" src={logo} alt="Platzi Video" />
+    </Link>
+    
     <div className="header__menu">
       <div className="header__menu--profile">
         <img src={userIcon} alt="" />
@@ -17,7 +23,11 @@ const Header = () => (
       </div>
       <ul>
         <li><a href="/">Cuenta</a></li>
-        <li><a href="/">Cerrar Sesión</a></li>
+        <li>
+          <Link to='/login'>
+            Iniciar sesión
+          </Link>
+        </li>
       </ul>
     </div>
   </header>

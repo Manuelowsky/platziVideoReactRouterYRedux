@@ -1,11 +1,13 @@
-/*Eslint nos sirve para detectar errores y types*/
 {
+  /*Entorno en el que trabajamos*/
   "env": {
     "browser": true,
     "es6": true,
     "node": true
   },
+  //Utilizando la configuracion que alguien usa para sus proyectos
   "extends": ["airbnb"],
+  //Referencias a la parte global 
   "globals": {
     "document": false,
     "escape": false,
@@ -19,11 +21,13 @@
     "sinon": true
   },
   "parser": "babel-eslint",
+  //Plugins para que vayan revisando codigo
   "plugins": [
     "react",
     "jsx-a11y",
     "import"
   ],
+  //Reglas importantes, para tener nuestros códigos en regla
   "rules": {
     "react/jsx-filename-extension": 0,
     "array-bracket-spacing": 2,

@@ -1,20 +1,17 @@
-import React, { useState, useEffect } from 'react';
-import Header from '../components/Header';
+import React, { useState, useEffect, Fragment } from 'react';
 import Search from '../components/Search';
 import Categories from '../components/Categories';
 import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
-import Footer from '../components/Footer';
 import useInitialState from '../hooks/useInitialState';
 import '../assets/styles/App.scss';
 
 const API = 'http://localhost:3000/initalState'
 
-const App = () => {
+const Home = () => {
   const initialState = useInitialState(API);
   return initialState.length === 0 ? <h1>Loading...</h1> : (
-    <div className="App">
-      <Header />
+    <Fragment>
       <Search />
       {initialState.mylist.length > 0 &&
         <Categories title="Mi Lista">
@@ -39,9 +36,8 @@ const App = () => {
           )}
         </Carousel>
       </Categories>
-      <Footer />
-    </div>
+    </Fragment>
   );
 }
 
-export default App;
+export default Home;
