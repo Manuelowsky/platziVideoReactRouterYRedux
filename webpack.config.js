@@ -18,7 +18,9 @@ module.exports = {
         //Permite saber en que directorio esta nuestro proyecto
         path: path.resolve(__dirname, 'dist'),
         //Nombre del resultante de JS
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        //Apartir de alli se encontraran los elementos
+        publicPath: '/'
     },
     resolve: {
         //Extensiones que vamos a utilizar

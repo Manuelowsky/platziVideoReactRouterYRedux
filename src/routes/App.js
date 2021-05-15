@@ -8,6 +8,8 @@ import Home from '../containers/Home';
 import Login from '../containers/Login';
 //Importando Register
 import Register from '../containers/Register';
+//Importando Player
+import Player from '../containers/Player';
 //Importando NotFound
 import NotFound from '../containers/NotFound';
 //Importando Layout
@@ -36,6 +38,7 @@ const App = () => (
                 <Route exact path='/' component={Home} />
                 <Route exact path='/login' component={Login}/>
                 <Route exact path='/register' component={Register}/>
+                <Route exact path='/player/:id' component={Player}/>
                 <Route component={NotFound}></Route>
             </Switch>
         </Layout>

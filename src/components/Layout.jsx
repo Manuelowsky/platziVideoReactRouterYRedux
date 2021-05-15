@@ -9,7 +9,6 @@ import Footer from './Footer';
 const Layout = ({children}) => {
     return ( 
         <div>
-            <Header/>
                 {   //Layout recibe un hijo desde App.js donde estan las rutas
                     children
                 }
