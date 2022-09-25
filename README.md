@@ -1,0 +1,3 @@
+# platziVideoReactRouterYRedux
+
+Initial project Redux
